@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="display">
+            00:00:00
+        </div>
+        <h1>Laps:</h1>
+
+  <div id="laps">
+    <p id="lapRecord"></p>
+  </div>
+
+        <div class="buttons">
+            <button id="startStopbtn" >Start</button> 
+            <button id="Stopbtn" >Stop</button>
+            <button id="resetbtn" >Reset</button>
+            <button id="lapsbtn" >Lap</button>
+          
+        </div>
+
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    
+    <div class="container">
+        <button onclick="myFunction()" class = "toggle"><B>DARK MODE</B></button>
+
+<div class = "circle">
+    <div id="display">
+       <div>00:00:00</div>
+    </div>  
+</div>
+       
+
+       
+
+        <div class="buttons">
+            <button id="startStop" class = "button-wrapper" onclick="startStop()"><ion-icon name="stopwatch-outline" class = "button__icon"></ion-icon><b>START</b></button>
+             <button id="reset" class = "button-wrapper" onclick="reset()"><ion-icon name="refresh-outline" class = "button__icon"></ion-icon><b>RESET</b></button>
+             <button id="lapbtn" class = "button-wrapper" onclick="lap()"><ion-icon name="cloud-upload-outline" class = "button__icon"></ion-icon><b>LAPS</b></button>
+             <button id="stop" class = "button-wrapper" onclick="stop()"><ion-icon name="stop-circle-outline" class = "button__icon"> </ion-icon><b>STOP</b></button>
+        </div>
+        <!-- <span class = "heading">LAPS</span> -->
+            
+        <div id="laps">
+          <p id="lapRecord"></p>
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
